@@ -71,7 +71,6 @@ const en_US = {
   "menu.canvasDynamicEffect.searchlightEffect": "Searchlight Effect",
   "menu.canvasDynamicEffect.sphereCollisionInteraction":
     "Sphere Collision Interaction",
-  "menu.canvasDynamicEffect.destroyThePlanetGame": "Destroy The Planet Game",
   "menu.canvasDynamicEffect.sphereFreeFallInteraction":
     "Sphere Free Fall Interaction",
   "menu.canvasDynamicEffect.coolCountdownAnimation": "Cool Countdown Animation",
@@ -89,6 +88,7 @@ const en_US = {
   "menu.threeJs3D": "Three.js3D",
   "menu.threeJs3D.appPageFrame": "Cool 3D Application page",
   "menu.threeJs3D.carShow": "Car Show",
+  "menu.threeJs3D.house": "Full view of house",
   "menu.AIApplication": "AI Application",
   "menu.AIApplication.humanPostureDetection": "Human Posture Detection",
   "menu.AIApplication.notBlockPeopleBarrage":

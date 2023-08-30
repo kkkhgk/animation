@@ -13,7 +13,6 @@ import GenerateRegularPolygon from "pages/css/GenerateRegularPolygon/index.vue";
 import DynamicClock from "pages/canvas/DynamicClock.vue";
 import Searchlight from "pages/canvas/Searchlight.vue";
 import GlobuleInteraction from "pages/canvas/GlobuleInteraction.vue";
-import KillPlanetGame from "pages/canvas/KillPlanetGame.vue";
 import FreeFallingBody from "pages/canvas/FreeFallingBody.vue";
 import CountDown from "pages/canvas/CountDown/index.vue";
 import RippleFloatOnTheWater from "pages/canvas/RippleFloatOnTheWater/index.vue";
@@ -23,6 +22,7 @@ import WordDance from "pages/canvas/WordDance.vue";
 import Scratch from "pages/canvas/Scratch.vue";
 import AppPage3DFrame from "pages/threejs/AppPageFrame.vue";
 import CarShow from "pages/threejs/CarShow.vue";
+import House from "pages/threejs/house.vue";
 import HumanPostureDetection from "pages/AIApplication/HumanPostureDetection.vue";
 import NotBlockPeopleBarrage from "pages/AIApplication/NotBlockPeopleBarrage.vue";
 import GameImage from "pages/GameImage/index.vue";
@@ -92,10 +92,6 @@ const contentRoutes = [
         component: GlobuleInteraction,
       },
       {
-        path: "/canvas/killPlanetGame",
-        component: KillPlanetGame,
-      },
-      {
         path: "/canvas/freeFallingBody",
         component: FreeFallingBody,
       },
@@ -148,6 +144,10 @@ const contentRoutes = [
       {
         path: "/threejs/carShow",
         component: CarShow,
+      },
+      {
+        path: "/threejs/house",
+        component: House,
       },
     ],
   },

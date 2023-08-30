@@ -112,10 +112,6 @@ const items: Ref<ItemType[]> = computed(() => [
         "globuleInteraction"
       ),
       getItem(
-        t("menu.canvasDynamicEffect.destroyThePlanetGame"),
-        "killPlanetGame"
-      ),
-      getItem(
         t("menu.canvasDynamicEffect.sphereFreeFallInteraction"),
         "freeFallingBody"
       ),
@@ -172,6 +168,10 @@ const items: Ref<ItemType[]> = computed(() => [
       getItem(
         t("menu.threeJs3D.carShow"),
         "carShow"
+      ),
+      getItem(
+        t("menu.threeJs3D.house"),
+        "house"
       ),
     ]
   ),

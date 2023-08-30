@@ -28,6 +28,7 @@
     "gsap": "^3.12.2",
     "lodash-es": "^4.17.21",
     "pako": "^2.1.0",
+    "pannellum": "^2.5.6",
     "particles.js": "^2.0.0",
     "rambda": "^8.1.0",
     "sphere-collision": "^1.1.6",

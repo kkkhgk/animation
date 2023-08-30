@@ -2,13 +2,14 @@
  * 文字跳舞
  */
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref,onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const canvasWidth = 324;
-const canvasHeight = 570;
+const canvasWidth = 480;
+const canvasHeight = 750;
 let ctxRef: CanvasRenderingContext2D | null = null;
 let frameId: number = 0;
+let filltext:string='2'
 
 const { t } = useI18n();
 const boxRef = ref<HTMLDivElement>();
@@ -21,8 +22,8 @@ const init = () => {
     canvasRef.value.height = canvasHeight;
     ctxRef = canvasRef.value.getContext("2d", {
       willReadFrequently: true,
-    }) as CanvasRenderingContext2D;
-    videoRef.value.crossOrigin = "anonymous";
+    }) as CanvasRenderingContext2D;// 获取canvas的2D渲染上下文
+    videoRef.value.crossOrigin = "anonymous";//设置视频的跨域属性为"anonymous"
   }
 };
 
@@ -40,8 +41,8 @@ const play = () => {
       0,
       canvasWidth,
       canvasHeight
-    );
-    ctxRef.clearRect(0, 0, canvasWidth, canvasHeight);
+    );// 获取画布上的图像数据
+    ctxRef.clearRect(0, 0, canvasWidth, canvasHeight); // 清空画布
     const { data, width, height } = imageData;
     for (let y = 0; y < height; y++) {
       for (let x = 0; x < width; x++) {
@@ -50,9 +51,9 @@ const play = () => {
           const avgColor =
             (data[startIndex] + data[startIndex + 1] + data[startIndex + 2]) /
             3;
-          ctxRef.fillStyle = `rgb(${avgColor}, ${avgColor}, ${avgColor})`;
-          ctxRef.font = "10px Arial";
-          ctxRef.fillText("8", x, y);
+          ctxRef.fillStyle = `rgb(${avgColor}, ${avgColor}, ${avgColor})`;// 设置字体颜色为平均颜色
+          ctxRef.font = "10px Arial"; // 设置字体样式
+          ctxRef.fillText(filltext, x, y);// 给像素点绘制数字
         }
       }
     }
@@ -60,7 +61,8 @@ const play = () => {
   }
 };
 
-onMounted(() => {
+
+onMounted(() =>{
   init();
   play();
 })
@@ -79,10 +81,24 @@ onUnmounted(() => {
     <canvas ref="canvasRef">
       {{ t("common.browserTooLow") }}
     </canvas>
-    <div class="tip">
-      {{ t("page.canvasDynamicEffect.videoIsSlowToLoad") }}
+    <div>
+      <span style="color:black">请选择要填充的数字：</span>
+      <select id="filltext" v-model="filltext">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
     </div>
   </div>
+  
+  
 </template>
 
 <style scoped lang="scss">
@@ -107,9 +123,6 @@ onUnmounted(() => {
     visibility: hidden;
   }
 
-  .tip {
-    margin-top: 20px;
-    color: #666;
-  }
 }
+
 </style>

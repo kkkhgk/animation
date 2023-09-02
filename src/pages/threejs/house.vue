@@ -3,7 +3,7 @@
          class="viewwe"></div>
 </template>
 
-<script>
+<script lang="ts">
 import 'pannellum/build/pannellum.css';
 import 'pannellum'
 import { onMounted, reactive, ref } from 'vue'
@@ -39,7 +39,7 @@ export default {
         })
         const viewer = ref()
         onMounted(() => {
-            window.pannellum.viewer("panorama", {
+            (window as any).pannellum.viewer("panorama", {
                 default: {
                     firstScene: "first",
                     orientationOnByDefault: true, // 是否开启vr效果

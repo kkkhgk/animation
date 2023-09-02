@@ -70,7 +70,7 @@ const zh_CN = {
   "menu.canvasDynamicEffect.coolCountdownAnimation": "炫酷倒计时动画",
   "menu.canvasDynamicEffect.dynamicParticleBackground": "动态粒子背景",
   "menu.canvasDynamicEffect.rippleEffect": "水波荡漾效果",
-  "menu.canvasDynamicEffect.flowerBloomingAnimation": "花卉绽放动画",
+  "menu.canvasDynamicEffect.meteorShowerAnimation": "流星雨",
   "menu.canvasDynamicEffect.codeBackgroundWall": "代码背景墙",
   "menu.canvasDynamicEffect.wordDance": "文字跳舞",
   "menu.canvasDynamicEffect.scratch": "刮刮乐",
@@ -126,7 +126,6 @@ const zh_CN = {
   "page.htmlVision.interactiveDesign.dragToThisToBuy": "拖拽到此区域进行购买",
   "page.htmlVision.interactiveDesign.previousPage": "前一页",
   "page.htmlVision.interactiveDesign.nextPage": "后一页",
-  "page.htmlVision.interactiveDesign.personalArticle": "个人文章",
   "page.htmlVision.interactiveDesign.autoCompletePunctuation":
     "自动补全标点输入框",
 

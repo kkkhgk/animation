@@ -16,7 +16,7 @@ import GlobuleInteraction from "pages/canvas/GlobuleInteraction.vue";
 import FreeFallingBody from "pages/canvas/FreeFallingBody.vue";
 import CountDown from "pages/canvas/CountDown/index.vue";
 import RippleFloatOnTheWater from "pages/canvas/RippleFloatOnTheWater/index.vue";
-import FlowerBloom from "pages/canvas/FlowerBloom/index.vue";
+import MeteorShower from "pages/canvas/MeteorShower/index.vue";
 import CodeBgWall from "pages/canvas/CodeBgWall.vue";
 import WordDance from "pages/canvas/WordDance.vue";
 import Scratch from "pages/canvas/Scratch.vue";
@@ -104,8 +104,8 @@ const contentRoutes = [
         component: RippleFloatOnTheWater,
       },
       {
-        path: "/canvas/flowerBloom",
-        component: FlowerBloom,
+        path: "/canvas/meteorShower",
+        component: MeteorShower,
       },
       {
         path: "/canvas/codeBgWall",

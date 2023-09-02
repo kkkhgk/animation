@@ -77,8 +77,8 @@ const en_US = {
   "menu.canvasDynamicEffect.dynamicParticleBackground":
     "Dynamic Particle Background",
   "menu.canvasDynamicEffect.rippleEffect": "Ripple Effect",
-  "menu.canvasDynamicEffect.flowerBloomingAnimation":
-    "Flower Blooming Animation",
+  "menu.canvasDynamicEffect.meteorShowerAnimation":
+    "Meteor Shower",
   "menu.canvasDynamicEffect.codeBackgroundWall": "Code Background Wall",
   "menu.canvasDynamicEffect.wordDance": "Word Dance",
   "menu.canvasDynamicEffect.scratch": "Scratch",
@@ -86,7 +86,6 @@ const en_US = {
   "menu.echartsInteraction.barCharts": "Bar Charts",
   "menu.echartsInteraction.pieCharts": "Pie Charts",
   "menu.threeJs3D": "Three.js3D",
-  "menu.threeJs3D.appPageFrame": "Cool 3D Application page",
   "menu.threeJs3D.carShow": "Car Show",
   "menu.threeJs3D.house": "Full view of house",
   "menu.AIApplication": "AI Application",
@@ -144,7 +143,6 @@ const en_US = {
     "Drag to this area to buy",
   "page.htmlVision.interactiveDesign.previousPage": "Previous Page",
   "page.htmlVision.interactiveDesign.nextPage": "Next Page",
-  "page.htmlVision.interactiveDesign.personalArticle": "Personal Article",
   "page.htmlVision.interactiveDesign.autoCompletePunctuation":
     "Automatically complete the punctuation input box",
 

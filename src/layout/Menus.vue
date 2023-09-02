@@ -124,8 +124,8 @@ const items: Ref<ItemType[]> = computed(() => [
         "rippleFloatOnTheWater"
       ),
       getItem(
-        t("menu.canvasDynamicEffect.flowerBloomingAnimation"),
-        "flowerBloom"
+        t("menu.canvasDynamicEffect.meteorShowerAnimation"),
+        "meteorShower"
       ),
       getItem(
         t("menu.canvasDynamicEffect.codeBackgroundWall"),

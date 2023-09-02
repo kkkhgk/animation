@@ -1,3 +1,11 @@
+<!--
+ * @Author: yu.wang 634562990@qq.com
+ * @Date: 2023-07-21 04:58:18
+ * @LastEditors: yu.wang 634562990@qq.com
+ * @LastEditTime: 2023-09-01 17:32:01
+ * @FilePath: \visualization-collection-vue-master\src\pages\html\InteractiveDesign\index.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 /**
  * 交互设计
  */
@@ -6,7 +14,6 @@ import useScrollToTop from 'hooks/useScrollToTop';
 import MagnifyingGlass from './components/MagnifyingGlass.vue';
 import CropImage from './components/CropImage.vue';
 import DragShopping from './components/DragShopping.vue';
-import MouseHover from './components/MouseHover.vue';
 import SlideButtonTab from './components/SlideButtonTab.vue';
 import FlipBook from './components/FlipBook.vue';
 import Switchs from './components/Switchs/index.vue';
@@ -25,7 +32,6 @@ const boxList = [
   { element: MagnifyingGlass },
   { element: CropImage },
   { element: DragShopping },
-  { element: MouseHover },
   { element: SlideButtonTab },
   { element: FlipBook },
   { element: Switchs },

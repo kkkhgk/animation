@@ -5,7 +5,6 @@ import VisualDesign from "pages/html/VisualDesign/index.vue";
 import InteractiveDesign from "pages/html/InteractiveDesign/index.vue";
 import BackgroundEffect from "pages/html/BackgroundEffect/index.vue";
 import ComplexLayout from "pages/html/ComplexLayout/index.vue";
-import AppPageFrame from "pages/html/AppPageFrame/index.vue";
 import UtilitarianFunction from "pages/html/UtilitarianFunction/index.vue";
 import DynamicButtons from "pages/css/DynamicButtons/index.vue";
 import RichDynamicEffect from "pages/css/RichDynamicEffect/index.vue";
@@ -28,6 +27,7 @@ import NotBlockPeopleBarrage from "pages/AIApplication/NotBlockPeopleBarrage.vue
 import GameImage from "pages/GameImage/index.vue";
 import Bar from "pages/echarts/Bar/index.vue";
 import Pie from "pages/echarts/Pie/index.vue";
+import Largescreen from "pages/largescreen/index.vue";
 
 const contentRoutes = [
   {
@@ -48,10 +48,6 @@ const contentRoutes = [
       {
         path: "/html/complexLayout",
         component: ComplexLayout,
-      },
-      {
-        path: "/html/appPageFrame",
-        component: AppPageFrame,
       },
       {
         path: "/html/utilitarianFunction",
@@ -175,6 +171,10 @@ const contentRoutes = [
   {
     path: "/:pathMatch(.*)*",
     component: ComingSoon,
+  },
+  {
+    path: "/largescreen",
+    component: Largescreen,
   },
 ];
 

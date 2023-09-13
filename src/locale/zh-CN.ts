@@ -55,7 +55,6 @@ const zh_CN = {
   "menu.htmlVision.interactiveDesign": "交互设计",
   "menu.htmlVision.backgroundPattern": "背景图案",
   "menu.htmlVision.complexLayout": "复杂布局",
-  "menu.htmlVision.applicationPageFrame": "应用页面框架",
   "menu.htmlVision.utilitarianFunction": "实用功能",
   "menu.cssDynamicEffect": "Css动效",
   "menu.cssDynamicEffect.dynamicEffectButton": "动效按钮",
@@ -81,6 +80,7 @@ const zh_CN = {
   "menu.threeJs3D.appPageFrame": "炫酷3D应用页面",
   "menu.threeJs3D.carShow": "汽车展览",
   "menu.threeJs3D.house": "全景看房",
+  "menu.largescreen": "可视化大屏",
   "menu.AIApplication": "人工智能应用",
   "menu.AIApplication.humanPostureDetection": "人体姿态检测",
   "menu.AIApplication.notBlockPeopleBarrage": "不挡人像的弹幕",
@@ -203,6 +203,7 @@ const zh_CN = {
   "page.AIApplication.send": "发送",
   "page.AIApplication.sendBarrage": "发送弹幕",
 
+
   // 图片处理工具页
   "page.imageProcessingTool.extensionTipFront":
     "如果你想在离线时也使用该工具，或者是你有大于1350x1350尺寸的图片需要处理，那么推荐你使用",
@@ -261,53 +262,6 @@ const zh_CN = {
   "page.imageProcessingTool.clippingWidth": "裁剪宽度",
   "page.imageProcessingTool.clippingHeight": "裁剪高度",
   "page.imageProcessingTool.mosaicGrainSize": "马赛克颗粒大小",
-
-  // Html视觉-应用页面框架页
-  "page.htmlVision.applicationPageFrame.secondPage": "第二页",
-  "page.htmlVision.applicationPageFrame.thirdPage": "第三页",
-  "page.htmlVision.applicationPageFrame.lastPage": "最后一页",
-  "page.htmlVision.applicationPageFrame.title":
-    "两个跨域页面进行跳转传参的终极方案",
-  "page.htmlVision.applicationPageFrame.author": "作者",
-  "page.htmlVision.applicationPageFrame.pageA": "A页面",
-  "page.htmlVision.applicationPageFrame.pageB": "B页面",
-  "page.htmlVision.applicationPageFrame.appoint": "本文约定",
-  "page.htmlVision.applicationPageFrame.appointText1":
-    "A页面：跳转前的原来页面，假设为a.com",
-  "page.htmlVision.applicationPageFrame.appointText2":
-    "B页面：将要跳转的目标页面，假设为b.com",
-  "page.htmlVision.applicationPageFrame.subTitle1": "一、简单方案",
-  "page.htmlVision.applicationPageFrame.des1":
-    "说到页面跳转，首先想到的就是用a标签",
-  "page.htmlVision.applicationPageFrame.codeBox1.text":
-    "在A页面点击链接，并将参数data传到B页面",
-  "page.htmlVision.applicationPageFrame.codeBox2.text":
-    "在B页面接收A页面传过来的参数",
-  "page.htmlVision.applicationPageFrame.des2":
-    "还可以使用window.open方法跳转页面",
-  "page.htmlVision.applicationPageFrame.des3":
-    "弊端：通过URL的方式传参是有字符数量限制的，只能传递较少的数据。",
-  "page.htmlVision.applicationPageFrame.subTitle2": "二、传递长数据方案",
-  "page.htmlVision.applicationPageFrame.des4":
-    "想要传递大量数据就不能使用将数据放在URL中这种方式进行传递，这里我使用了HTML5中新引入的window.postMessage方法进行数据传递。",
-  "page.htmlVision.applicationPageFrame.des5":
-    "如果是在A页面中使用iframe标签嵌入B页面的情况下，方法如下：",
-  "page.htmlVision.applicationPageFrame.des6": "弊端",
-  "page.htmlVision.applicationPageFrame.des7":
-    "1. 使用postMessage发送消息时要保证B页面已加载，由于A和B两个页面是跨域的，所以使用popup.onload是无效的，只能使用setTimeout延迟发送，这种做法比较low，不能保证稳定性。",
-  "page.htmlVision.applicationPageFrame.des8":
-    "2. 使用iframe标签只能嵌入页面，不能打开新窗口，使用window.open可以打开新窗口，但是，当B页面刚被加载时是没有数据传递的，数据是在窗口打开后才被发送，所以B页面会有延迟。",
-  "page.htmlVision.applicationPageFrame.subTitle3":
-    "三、终极方案：iframe+postMessage+localStorage",
-  "page.htmlVision.applicationPageFrame.des9":
-    "在A页面中使用iframe标签加载B页面并隐藏，当点击跳转时，使用postMessage发送消息给B页面，在B页面中监听A页面发过来的数据，然后保存到localStorage中，然后当A页面使用window.open打开B页面时，B页面直接去localStorage中取数据，这样就完成了页面跳转并传参",
-  "page.htmlVision.applicationPageFrame.codeBox3.text":
-    "当能获取到数据时就说明是从A页面跳转过来的",
-  "page.htmlVision.applicationPageFrame.des10": "总结",
-  "page.htmlVision.applicationPageFrame.des11":
-    "1. iframe和postMessage都是可以跨域的，而localStorage是不能跨域共享数据的。",
-  "page.htmlVision.applicationPageFrame.des12":
-    "2. window.postMessage中的window始终是指将要跳转的目标页面的window对象。",
 
   // 广告语
   "ad.phoneAccessories":

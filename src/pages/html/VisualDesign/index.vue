@@ -5,8 +5,6 @@
 import useScrollToTop from 'hooks/useScrollToTop';
 import GridContent from 'components/GridContent/index.vue';
 import GridBox from 'components/GridContent/GridBox.vue';
-import GlassMimicry1 from './components/GlassMimicry1.vue';
-import GlassMimicry2 from './components/GlassMimicry2.vue';
 import MixBlendMode from './components/MixBlendMode.vue';
 import SwitchingText from './components/SwitchingText.vue';
 import Typed1 from './components/Typed1.vue';
@@ -37,8 +35,6 @@ import ActivityCountDown from './components/ActivityCountDown.vue';
 const rowSpace = 4;
 const colSpace = 4;
 const gridboxList = [
-  { element: GlassMimicry1 },
-  { element: GlassMimicry2 },
   { element: MixBlendMode },
   { element: SwitchingText },
   { element: Typed1 },

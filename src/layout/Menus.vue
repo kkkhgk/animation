@@ -65,10 +65,6 @@ const items: Ref<ItemType[]> = computed(() => [
         "complexLayout"
       ),
       getItem(
-        t("menu.htmlVision.applicationPageFrame"),
-        "appPageFrame"
-      ),
-      getItem(
         t("menu.htmlVision.utilitarianFunction"),
         "utilitarianFunction"
       ),
@@ -174,6 +170,11 @@ const items: Ref<ItemType[]> = computed(() => [
         "house"
       ),
     ]
+  ),
+  getItem(
+    t("menu.largescreen"),
+    "largescreen",
+    () => h(FileImageOutlined),
   ),
   getItem(
     t("menu.AIApplication"),

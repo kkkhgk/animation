@@ -2,7 +2,7 @@
  * @Author: yu.wang 634562990@qq.com
  * @Date: 2023-07-21 04:58:18
  * @LastEditors: yu.wang 634562990@qq.com
- * @LastEditTime: 2023-09-02 00:39:14
+ * @LastEditTime: 2023-09-07 11:02:06
  * @FilePath: \visualization-collection-vue-master\vite.config.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -13,7 +13,6 @@ import { AntDesignVueResolver } from "unplugin-vue-components/resolvers";
 import fs from "fs";
 import path from "path";
 import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
-import legacy from '@vitejs/plugin-legacy';
 
 /**
  * 获取 Node.js 进程的当前工作目录的绝对路径
@@ -65,22 +64,9 @@ export default defineConfig({
     Components({
       resolvers: [AntDesignVueResolver({ importStyle: false })],
     }),
-    legacy({
-        targets: ['defaults', 'not IE 11']
-      }),
   ],
   server: {
     port: 3002,
     open: true,
-    // proxy: {
-    //     //配置自定义代理规则
-    //     // 字符串简写写法
-    //     '/jpi': 'http://101.200.234.125:80',
-    //     '/api': {
-    //       target: 'http://101.200.234.125:80',
-    //       changeOrigin: true, //是否跨域
-    //       rewrite: path => path.replace(/^\/api/, '')
-    //     }
-    //   }
   },
 });

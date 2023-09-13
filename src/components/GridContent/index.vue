@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ComputedRef, computed } from 'vue';
-import * as classNames from "classnames";
+import classNames from "classnames";
 
 interface Props {
     differentScreenCols: [number, number, number, number, number, number?]; // 设置窗口在大于2000px、1700-2000px、1400-1700px、1200-1400px、500-1200px、小于500px时每行所显示的列数，列数支持1-10的整数

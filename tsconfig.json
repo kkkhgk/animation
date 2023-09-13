@@ -1,9 +1,5 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "build",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -14,10 +10,11 @@
     ],
     "skipLibCheck": true,
     /* Bundler mode */
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "noEmit": true,
     "jsx": "preserve",
     /* Linting */
     "strict": true,
